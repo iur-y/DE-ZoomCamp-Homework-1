@@ -1,1 +1,5 @@
 .env
+question-7/keys
+question-7/*tfstate*
+question-7/variables.tf
+question-7/.terraform/
