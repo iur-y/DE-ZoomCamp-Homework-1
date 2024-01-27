@@ -77,3 +77,22 @@ WHERE
 
 SELECT COUNT(1) FROM sep_18th_records
 ```
+
+## Question 4. Largest trip for each day
+
+Which was the pick up day with the largest trip distance
+Use the pick up time for your calculations.
+
+- 2019-09-18
+- 2019-09-16
+- 2019-09-26
+- 2019-09-21
+
+### Answer: `2019-09-26`
+### Query:
+``` SQL
+SELECT lpep_pickup_datetime::DATE AS day_of_largest_trip
+FROM public.green_september_2019
+ORDER BY trip_distance DESC
+LIMIT 1
+```
