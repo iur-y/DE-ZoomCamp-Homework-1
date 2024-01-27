@@ -1,0 +1,12 @@
+FROM python:latest
+
+WORKDIR /app
+
+COPY ./ingestion.py /app/ingestion.py
+COPY ./ingestion-requirements.txt /app/requirements.txt
+
+RUN pip install -r /app/requirements.txt
+RUN wget -O "green_2019.csv.gz" \
+https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz
+
+ENTRYPOINT [ "python", "ingestion.py" ]
