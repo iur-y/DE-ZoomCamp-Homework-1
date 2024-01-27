@@ -1,3 +1,6 @@
+# What is this repository?
+My answers for the questions of the first module of a Data Engineering course, which you can find [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main)
+
 ## Question 1. Knowing docker tags
 
 Run the command to get information on Docker 
